@@ -18,7 +18,7 @@ def get_gemini_response(input, image):
         response = model.generate_content(image)
     return response.text
 
-st.set_page_config(page_title="Image Recognition App" , page_icon=":camera:", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Image Recognition App" , page_icon=":camera:", layout="centered", initial_sidebar_state="expanded")
 
 st.header("Image Recognition Bot")
 input = st.text_input("Input Prompt: ", key="input")
